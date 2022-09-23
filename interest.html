@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Interests</title>
+    <link rel='stylesheet' href='./css/styles.css'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>HTML5 & CSS3 Project</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#" class="active">Intrest(s)</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="container">
+        <div class="banner">
+          <h2>Interest(s)</h2>
+        </div>
+        <article>
+          <div class="articleBanner">
+            <p>Out of many of my interests I mention a couple on my <a href="about.html">about</a> page. Next to astronomy, videogames, VR/AR, and many more, my main interest lies in programming and web technologies.<br><br>
+              If I have to choose one, I will stick to the theme of the project and go for the <strong>HTML canvas</strong>. This element introduced me to programming, and that is why it deserves some extra attention. </p>
+          </div>
+          <div class="paragraphLeft">
+            <h3>HTML Canvas</h3>
+            <p>The HTML canvas is an element which can be used to draw graphics with javascript. When you think of <strong>drawing</strong> graphics as <strong>rendering</strong> and <strong>manipulating</strong> them in this element, than you can quickly see how this simple html element can create some fun and sometimes pretty impressive features. In my case when I first started programming, these where web games.<br><br>
+              The canvas can be created with plain html and css: <code>&lt;canvas id=&quot;myCanvas&quot; width=&quot; 	&quot; height=	&quot; 	&quot; style=&quot;border:1px solid black;&quot;&gt;&lt;/canvas&gt;</code><br>
+              This html snippet will result in the following canvas.
+            </p>
+          </div>
+          <canvas id="myCanvas" height= "100"></canvas>
+          <div>
+            <h3>How it works</h3>
+            <p>I am going to keep it short, but if you want, you can allways visit the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">MDM Web docs</a>. To start drawing on the canvas you need to get the elements <strong>context with java script</strong> through the canvas API. In this context you can start drawing using the <strong>CanvasRenderingContext2D interface</strong>.</p>
+            <p>Once you've declared the basics you can do all sorts of thing using this API. For example...</p>
+          </div>
+          <div class="canvasElement">
+            <h4>Get evenets such as your mouse position</h4>
+            <canvas id="canvas1" height="250"></canvas>
+          </div>
+          <div class="canvasElement">
+            <h4>Draw, animate, render and calculate collisions</h4>
+            <canvas id="canvas2" height="250"></canvas>
+          </div>
+          <p>Offcourse this isn't a web game yet but you can see how the few features I showed can get you a long way. &#128522;</p>
+        </article>
+
+      </section>
+
+      <footer>
+        <div class="copy">
+          &copy; Dries Van Hool
+        </div>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/dries-van-hool-371202195/" class="fa fa-linkedin"></a>
+          <a href="https://github.com/DriesVanHool" class="fa fa-github"></a>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="./js/canvas1.js"></script>
+    <script type="text/javascript" src="./js/canvas2.js"></script>
+</html>

@@ -1,0 +1,316 @@
+/**************************
+          GENERAL
+**************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Trebuchet MS", "Arial", sans-serif;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(180deg, #8BC6EC 0%, #6590be 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #08101c;
+  font-size: 18px;
+}
+
+.page{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  padding: 20px;
+  font-size: 45px;
+}
+
+h3{
+  padding-top: 20px;
+}
+
+a{
+  color: #08101c;
+}
+
+code{
+  font-family: 'Courier New', monospace;
+  background-color: rgba(103,136,185,0.5);
+}
+
+canvas{
+  margin: 30px 0px 30px 0px;
+  background-color:rgba(0, 0, 0, 0.2);
+  border:1px solid black;
+  cursor: pointer;
+}
+
+/**************************
+          HEADER
+**************************/
+
+header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+nav{
+  order: -1;
+  padding: 20px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+}
+
+nav li a{
+  padding: 0px 15px 0px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #08101c;
+  line-height: 45px;
+}
+
+nav li:hover{
+  text-decoration: underline;
+}
+
+nav li:active{
+  opacity:0.5;
+}
+
+.active{
+  text-decoration:overline;
+}
+
+p{
+  padding-bottom: 20px;
+  line-height: 25px;
+}
+
+
+/**************************
+          CONTENT
+**************************/
+
+.container{
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profileImage{
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 6px solid #0C1E2E;
+}
+
+.wave{
+  font-size: 40px;
+}
+
+.intro{
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+article,
+.articleBanner{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro,
+.articleBanner{
+  background-color: rgba(230,239,251,0.3);
+  box-shadow: 2px 2px rgba(101,144,190,0.2);
+  margin-bottom: 30px;
+}
+
+article p{
+  padding: 30px 0px 30px 0px;
+}
+
+article img,
+#myCanvas{
+  width: 100%
+}
+
+article strong{
+  font-size: 19px;
+}
+
+.banner{
+  width: 100%;
+  height: 50px;
+  background-color: rgba(103,136,185,0.8);
+  box-shadow: 2px 2px rgba(101,144,190,0.2);
+  color: #E6EFFB;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.canvasElement{
+  padding: 10px;
+}
+
+.canvasElement h4{
+  text-align: center;
+}
+
+#canvas1,
+#canvas2{
+  width: 100%;
+}
+
+/**************************
+          FOOTER
+**************************/
+
+footer{
+  margin-top: auto;
+  padding: 0px 10px 0px 10px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.copy{
+  vertical-align: middle;
+  float: left;
+}
+
+.socials{
+  font-size: 30px;
+  float: right;
+}
+
+.socials .fa{
+  text-align: center;
+  text-decoration: none;
+  color: #121924;
+}
+
+.socials .fa:hover {
+    opacity: 0.5;
+}
+
+/**************************
+        RESPONSIVE
+**************************/
+
+/*Mobile*/
+@media only screen and (max-width: 400px){
+
+}
+
+/*Table*/
+@media only screen and (min-width: 400px) and (max-width: 960px) {
+  header{
+    justify-content: space-around;
+  }
+  nav{
+    order: 1;
+  }
+
+  .banner{
+    height: 100px;
+  }
+  .banner h2{
+    line-height: 100px;
+    font-size: 35px;
+  }
+
+  .intro{
+    text-align: left;
+    margin-top: 100px;
+  }
+  .intro p{
+    float: left;
+    padding: 50px 20px 0px 0px;
+  }
+
+  article
+  .paragraphLeft,
+  .paragraphRight{
+    width: 70%;
+  }
+
+  article img,
+  #myCanvas{
+    width: 30%;
+  }
+
+  article p{
+    padding: 30px;
+  }
+
+  .canvasElement{
+    width: 50%;
+  }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 961px) {
+  header{
+    justify-content: space-around;
+  }
+
+  nav{
+    order: 1;
+  }
+
+  .banner{
+    height: 100px;
+  }
+  .banner h2{
+    line-height: 100px;
+    font-size: 35px;
+  }
+
+  .container{
+      max-width: 960px;
+  }
+  .intro{
+    text-align: left;
+    margin-top: 100px;
+  }
+  .intro p{
+    float: left;
+    padding: 50px 20px 0px 0px;
+  }
+
+  article
+  .paragraphLeft,
+  .paragraphRight{
+    width: 70%;
+  }
+
+  article img,
+  #myCanvas{
+    width: 30%;
+  }
+
+  article p{
+    padding: 35px;
+  }
+
+  .canvasElement{
+    width: 50%;
+  }
+}
